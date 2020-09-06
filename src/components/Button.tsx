@@ -13,3 +13,11 @@ const styles = StyleSheet.create({
     borderColor: '#888',
   },
 });
+
+export default (props) => {
+  return (
+    <TouchableHighlight onPress={props.onclick}>
+      <Text style={styles.button}>{props.label}</Text>
+    </TouchableHighlight>
+  );
+};
